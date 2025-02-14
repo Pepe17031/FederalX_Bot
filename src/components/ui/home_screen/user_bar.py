@@ -1,9 +1,17 @@
-from components import show_border, border_red, border_green, border_blue
 import flet as ft
+# Debug Lines
+
+#--------------------------------------------------------------------
+show_border = False
+border_red = ft.border.all(3, ft.Colors.RED_600) if show_border else None
+border_green = ft.border.all(2, ft.Colors.GREEN_600) if show_border else None
+border_blue = ft.border.all(1, ft.Colors.BLUE_600) if show_border else None
+#--------------------------------------------------------------------
 
 class ProgressBar(ft.Container):
     def __init__(self):
         super().__init__()
+        self.visible = True # !!!!!!!!!!!!!!!!!!!!!!
 
         self.bgcolor="#232323"
         self.border_radius=10

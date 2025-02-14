@@ -161,7 +161,3 @@ cython_debug/
 
 # Flet
 storage/
-
-# PyChatm
-
-.idea
